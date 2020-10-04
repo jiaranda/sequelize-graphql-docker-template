@@ -7,7 +7,7 @@ services:
       - .env
     build: .
     command: bash -c "npm run dev-start"
-    volumes: 
+    volumes:
       - .:/code
     ports:
       - "8080:8080"
@@ -16,10 +16,12 @@ services:
     depends_on:
       - database
   database:
+    env_file:
+      - .db.env
     image: postgres:12
     ports:
       - 5432:5432
     volumes:
       - database-data:/var/lib/postgresql/data
 volumes:
-  database-data: {} 
+  database-data: {}

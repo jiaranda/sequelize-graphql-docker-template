@@ -1,5 +1,5 @@
 const messagesQueries = `
-    getMessages: [Message]
+    getUsers: [User]
 `;
 
 module.exports = messagesQueries;
