@@ -8,12 +8,12 @@ WORKDIR /code
 # Install app dependencies
 COPY package*.json ./
 
-RUN npm run preinstall
+RUN yarn preinstall
 
-RUN npm install
+RUN yarn install
 
 
-CMD ["npm", "start"]
+CMD ["yarn", "start"]
 
 COPY . .
 

@@ -1,4 +1,4 @@
-version: "3.3"
+version: '3.3'
 # This compose file is for development environment. For production use only Dockerfile
 
 services:
@@ -6,11 +6,11 @@ services:
     env_file:
       - .env
     build: .
-    command: bash -c "npm run dev-start"
+    command: bash -c "yarn dev-start"
     volumes:
       - .:/code
     ports:
-      - "8080:8080"
+      - '8080:8080'
     links:
       - database
     depends_on:
