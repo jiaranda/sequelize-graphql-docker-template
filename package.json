@@ -9,7 +9,7 @@
     "preinstall": "yarn global add sequelize-cli"
   },
   "dependencies": {
-    "apollo-server": "^2.18.1",
+    "apollo-server": "^2.25.4",
     "bcryptjs": "^2.4.3",
     "graphql": "^14.0.0",
     "graphql-middleware": "^4.0.2",
